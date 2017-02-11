@@ -1,9 +1,9 @@
 module EndpointBase
   def self.framework
-    if defined?(Rails)
-      :rails
-    elsif defined?(Sinatra)
+    if defined?(Sinatra)
       :sinatra
+    elsif defined?(Rails)
+      :rails
     end
   end
 
